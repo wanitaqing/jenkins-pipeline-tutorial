@@ -21,6 +21,11 @@ pipeline {
                 echo 'Run unit tests from the source code' 
             }
         }
+        stage('Get Artifacts') {
+            steps {
+                echo 'Hell' 
+            }
+        }
         stage('Run Integration Tests') {
             steps {
                 echo 'Run only crucial integration tests from the source code' 
